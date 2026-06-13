@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>影片搜索 - 国产高清影视</title>
+  <meta name="description" content="搜索国产影片视频、高清电影推荐、经典剧集和免费在线观看内容。">
+  <meta name="keywords" content="国产影片视频免费在线点播—最新高清电影推荐-经典国产剧集,国产,视频,免费,在线观看,高清,影视大全">
+  <link rel="stylesheet" href="./assets/base.css">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-shell">
+    <a class="logo" href="./index.html" aria-label="国产高清影视">
+      <span class="logo-mark">▶</span>
+      <span>国产高清影视</span>
+    </a>
+    <nav class="desktop-nav">
+      <a class="nav-link" href="./index.html">首页</a>
+      <a class="nav-link" href="./categories.html">分类</a>
+      <a class="nav-link" href="./ranking.html">排行榜</a>
+      <a class="nav-link active" href="./search.html">搜索</a>
+    </nav>
+    <form class="top-search" data-search-form action="./search.html">
+      <input type="search" name="q" placeholder="搜索片名、类型、年份" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="nav-toggle" type="button" aria-label="打开导航">☰</button>
+  </div>
+  <nav class="mobile-nav">
+    <a class="mobile-link" href="./index.html">首页</a>
+    <a class="mobile-link" href="./categories.html">分类</a>
+    <a class="mobile-link" href="./ranking.html">排行榜</a>
+    <a class="mobile-link active" href="./search.html">搜索</a>
+  </nav>
+</header>
+<main class="page-shell">
+  <div class="page-head">
+    <div>
+      <h1>影片搜索</h1>
+      <p>输入片名、年份、地区、类型或标签，快速找到想看的电影与剧集。</p>
+    </div>
+  </div>
+  <div class="search-layout">
+    <input class="search-input" type="search" data-search-page-input placeholder="搜索片名、年份、地区或题材">
+    <select class="search-select" data-search-page-category aria-label="选择分类">
+      <option value="">全部分类</option>
+      <option value="domestic-movies">国产电影</option><option value="classic-series">经典剧集</option><option value="mystery-thriller">悬疑惊悚</option><option value="comedy-life">喜剧生活</option><option value="action-martial">动作武侠</option><option value="romance-family">爱情家庭</option><option value="fantasy-sci-fi">科幻奇幻</option><option value="history-war">历史战争</option><option value="animation-adventure">动画冒险</option><option value="new-2025">2025新片</option><option value="new-2024">2024热映</option><option value="global-selection">海外精选</option>
+    </select>
+  </div>
+  <p class="section-desc" data-search-state>为你呈现相关影片</p>
+  <div class="movie-grid search-results" data-search-results></div>
+</main>
+<footer class="site-footer">
+  <div class="footer-shell">
+    <a class="footer-logo" href="./index.html">国产高清影视</a>
+    <p>汇集国产影片视频，提供免费在线点播服务，包含最新高清电影推荐，支持在线观看，拥有分类片库与榜单查找电影内容。</p>
+    <p>© 2026 国产高清影视</p>
+  </div>
+</footer>
+<script src="./assets/app.js"></script>
+<script src="./assets/search-data.js"></script>
+<script src="./assets/search.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
